@@ -375,6 +375,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   border-bottom: 4px solid #1acc8d;
 }
+
+.flip4 li{
+  color: #fff;
+  border-bottom: 4px solid #1acc8d;
+}
+
 #hero h2 {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 40px;
@@ -1763,8 +1769,9 @@ section {
 	 position: relative;
 	 /* float: right; */
 	 height: 65px;
-	 padding-top: 10px;
+	 padding-top: 20px;
 	 margin-top: -10px;
+	 margin-left: -30px;
 }
  .wordCarousel div li {
 	 font-family: Serif;
