@@ -1560,7 +1560,7 @@ section {
 	 position: absolute;
 	 background: var(--bg1);
 	 width: 18em;
-	 height: 5.5em; /* 6 em*/
+	 height: 5.5em; /* 6em*/
 	 border-radius: 50% 50% 0 0;
 	 border-bottom: 3px solid #f5f8f7;
 	 transition: all 0.4s;
@@ -1755,9 +1755,6 @@ section {
  
 
 
-
-
-
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
  .wordCarousel {
 	 font-size: 36px;
@@ -1894,3 +1891,228 @@ section {
 	 border-radius: 50%;
 }
   */
+
+
+
+
+
+
+
+
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Truculenta:wght@400;700&display=swap");
+ /* * {
+	 box-sizing: border-box;
+} */
+ .sr-only {
+	 visibility: hidden;
+}
+ .hidden {
+	 width: 0;
+	 height: 0;
+	 visibility: hidden;
+	 overflow: hidden;
+}
+ .hidden svg {
+	 width: 150px;
+	 height: 150px;
+}
+
+ /* body {
+	 display: flex;
+	 padding: 0;
+	 margin: 0;
+	 flex-direction: column;
+	 position: relative;
+} */
+ .challenge-title {
+	 text-align: center;
+	 padding: 0;
+	 margin: 1rem 0 0.5rem;
+	 color: #76c893;
+	 font-size: 2rem;
+	 font-weight: bold;
+}
+ .challenge-subtitle {
+	 text-align: center;
+	 margin: 0;
+	 font-size: 1.125rem;
+	 font-weight: 400;
+	 color: #b5bbc3;
+}
+ .challenge-part-of {
+	 text-align: center;
+	 margin: 1rem 0 0;
+	 font-size: 0.875rem;
+	 color: #b5bbc3;
+	 position: fixed;
+	 bottom: 1rem;
+	 right: 1rem;
+}
+ .challenge-part-of a, .challenge-part-of a:visited {
+	 color: #b5bbc3;
+	 text-decoration-style: wavy;
+}
+ .challenge-part-of a:hover, .challenge-part-of a:visited:hover, .challenge-part-of a:active, .challenge-part-of a:visited:active {
+	 color: #d1d5da;
+}
+ /* .container {
+	 margin: 1.5rem;
+	 padding: 2rem;
+	 width: 1000px;
+	 min-height: 300px;
+	 border: 1px solid #d1d5da;
+	 border-radius: 1rem;
+} */
+ .sbs-title {
+	 color: #c3c8cf;
+	 text-transform: uppercase;
+	 font-size: 0.625rem;
+	 margin: 0 0 1rem;
+	 padding: 1rem 0;
+}
+ .sbs-title:first-of-type {
+	 padding-top: 0;
+	 margin-top: 0;
+}
+ hr {
+	 border-top: 1px solid #edeff1;
+	 margin: 3rem 0 2rem;
+}
+ .stat {
+	 display: flex;
+	 align-items: stretch;
+	 margin: 0 -1rem;
+}
+ .stat .stat-item {
+	 flex: 1 0 33.3333333333%;
+	 display: flex;
+	 align-items: stretch;
+	 padding: 0 1rem;
+}
+ .stat .stat-item .stat-card {
+	 border: 1px solid #edeff1;
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 padding: 1.5rem 1rem;
+	 border-radius: 0.5rem;
+	 display: flex;
+	 align-items: center;
+	 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+ .stat .stat-item .stat-card .stat-title {
+	 display: flex;
+	 flex-direction: column;
+	 font-weight: bold;
+}
+ .stat .stat-item .stat-card .stat-title .prefix {
+	 margin-bottom: 0.125rem;
+	 font-size: 0.75rem;
+	 color: #b5bbc3;
+}
+ .stat .stat-item .stat-card .stat-title .value {
+	 font-size: 2rem;
+	 color: #45505a;
+}
+ .stat .stat-item .stat-card .stat-title .stat-change {
+	 margin-top: 0.125rem;
+	 font-size: 0.75rem;
+	 align-self: flex-start;
+	 display: inline-block;
+	 margin-top: 0.25rem;
+	 padding: 0.25rem;
+	 border-radius: 10px;
+}
+ .stat .stat-item .stat-card .stat-title .stat-change.up {
+	 background-color: #e1efe4;
+	 color: #386641;
+}
+ .stat .stat-item .stat-card .stat-title .stat-change.up i {
+	 transform: rotate(-45deg);
+}
+ .stat .stat-item .stat-card .stat-title .stat-change.down {
+	 background-color: #f2dddd;
+	 color: #bc4749;
+}
+ .stat .stat-item .stat-card .stat-title .stat-change.down i {
+	 transform: rotate(45deg);
+}
+ .stat .stat-item .stat-card .stat-icon {
+	 position: absolute;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 right: 5px;
+	 width: 150px;
+	 height: 150px;
+}
+ .stat .stat-item .stat-card .stat-icon svg {
+	 width: 100%;
+	 height: 100%;
+}
+ .stat.stat-bordered {
+	 margin: 0;
+	 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+ .stat.stat-bordered .stat-item {
+	 padding: 0;
+}
+ .stat.stat-bordered .stat-item:first-of-type .stat-card {
+	 border-radius: 0.5rem 0 0 0.5rem;
+}
+ .stat.stat-bordered .stat-item:not(:first-of-type) .stat-card {
+	 border-left: 0;
+}
+ .stat.stat-bordered .stat-item:last-of-type .stat-card {
+	 border-radius: 0 0.5rem 0.5rem 0;
+}
+ .stat.stat-bordered .stat-item .stat-card {
+	 box-shadow: none;
+	 border-radius: 0;
+}
+ .stat.stat-bordered .stat-item .stat-card .stat-title .prefix {
+	 color: #2f363d;
+}
+ .stat.stat-bordered .stat-item .stat-card .stat-title .value {
+	 color: #64c185;
+}
+ .stat.stat-bordered .stat-item .stat-card .stat-icon {
+	 right: 1rem;
+}
+ .fill-primary {
+	 fill: #76c893;
+}
+ .blink {
+	 animation: blinkColor 2s linear infinite;
+}
+ .blink-2 {
+	 animation: blinkColor 2.5s linear infinite;
+}
+ .blink-3 {
+	 animation: blinkColor 3s linear infinite;
+}
+ @keyframes blinkColor {
+	 78% {
+		 fill: #76c893;
+	}
+	 79% {
+		 fill: #d1d5da;
+	}
+	 81% {
+		 fill: #76c893;
+	}
+	 82% {
+		 fill: #d1d5da;
+	}
+	 83% {
+		 fill: #76c893;
+	}
+	 92% {
+		 fill: #d1d5da;
+	}
+	 92.5% {
+		 fill: #76c893;
+	}
+}
+ 
