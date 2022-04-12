@@ -271,7 +271,20 @@ h1, h2, h3, h4, h5, h6 {
   .mobile-nav-toggle {
     display: block;
   }
+  #ff{
+    font-size: 28px;
+  }
   
+  .wordCarousel{
+    font-size: 24px!important;
+  }
+  
+  #three{
+    width:92vw;
+  }
+  #four{
+    width:92vw;
+  }
   .navbar ul {
     display: none;
   }
@@ -992,6 +1005,9 @@ section {
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
+  }
+  #ff{
+    font-size: 48px;
   }
 }
 @media (min-width: 1200px) {
@@ -1991,7 +2007,7 @@ section {
 }
 /* This below */
  .stat {
-/* 	 display: flex; */
+	 /* display: flex; */
 	 align-items: stretch;
 	 margin: 0 -1rem;
 }
