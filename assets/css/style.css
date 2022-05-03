@@ -1780,150 +1780,198 @@ section {
  
 
 
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
- .wordCarousel {
-	 font-size: 36px;
-	 font-weight: 100;
-	 color: #eee;
-}
- .wordCarousel div {
-	 overflow: hidden;
-	 position: relative;
-	 /* float: right; */
-	 height: 65px;
-	 padding-top: 20px;
-	 margin-top: -10px;
-	 margin-left: -30px;
-}
- .wordCarousel div li {
-	 font-family: Serif;
-	 color: #eee;
-	 font-weight: 700;
-	 padding: 0 10px;
-	 height: 45px;
-	 margin-bottom: 45px;
-	 display: block;
-}
- .flip2 {
-	 animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
+  @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+  .wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: #939393;
+ }
+  .wordCarousel div {
+    overflow: hidden;
+    position: relative;
+    /* float: right; */
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+ }
+  .wordCarousel div li {
+    font-family: Arial;
+    color: #ccc;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+ }
+  .flip2 {
+    animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+ }
  .flip3 {
-	 animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+  .flip4 {
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+  @keyframes flip2 {
+    0% {
+      margin-top: -180px;
+   }
+    5% {
+      margin-top: -90px;
+   }
+    50% {
+      margin-top: -90px;
+   }
+    55% {
+      margin-top: 0px;
+   }
+    99.99% {
+      margin-top: 0px;
+   }
+    100% {
+      margin-top: -270px;
+   }
+ }
+  @keyframes flip3 {
+    0% {
+      margin-top: -270px;
+   }
+    5% {
+      margin-top: -180px;
+   }
+    33% {
+      margin-top: -180px;
+   }
+    38% {
+      margin-top: -90px;
+   }
+    66% {
+      margin-top: -90px;
+   }
+    71% {
+      margin-top: 0px;
+   }
+    99.99% {
+      margin-top: 0px;
+   }
+    100% {
+      margin-top: -270px;
+   }
+ }
+  @keyframes flip4 {
+    0% {
+      margin-top: -360px;
+   }
+    5% {
+      margin-top: -270px;
+   }
+    25% {
+      margin-top: -270px;
+   }
+    30% {
+      margin-top: -180px;
+   }
+    50% {
+      margin-top: -180px;
+   }
+    55% {
+      margin-top: -90px;
+   }
+    75% {
+      margin-top: -90px;
+   }
+    80% {
+      margin-top: 0px;
+   }
+    99.99% {
+      margin-top: 0px;
+   }
+    100% {
+      margin-top: -270px;
+   }
+ }
+
+ @media (min-width: 1450px) {
+  .wordCarousel div {
+    float: right;
+ }
 }
- .flip4 {
-	 animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+@media (min-width: 992px) {
+  .wordCarousel div {
+    float: left;
+ }
+ .flip4 li{
+  margin-left:-40px;
+ }
 }
- @keyframes flip2 {
-	 0% {
-		 margin-top: -180px;
-	}
-	 5% {
-		 margin-top: -90px;
-	}
-	 50% {
-		 margin-top: -90px;
-	}
-	 55% {
-		 margin-top: 0px;
-	}
-	 99.99% {
-		 margin-top: 0px;
-	}
-	 100% {
-		 margin-top: -270px;
-	}
-}
- @keyframes flip3 {
-	 0% {
-		 margin-top: -270px;
-	}
-	 5% {
-		 margin-top: -180px;
-	}
-	 33% {
-		 margin-top: -180px;
-	}
-	 38% {
-		 margin-top: -90px;
-	}
-	 66% {
-		 margin-top: -90px;
-	}
-	 71% {
-		 margin-top: 0px;
-	}
-	 99.99% {
-		 margin-top: 0px;
-	}
-	 100% {
-		 margin-top: -270px;
-	}
-}
- @keyframes flip4 {
-	 0% {
-		 margin-top: -360px;
-	}
-	 5% {
-		 margin-top: -270px;
-	}
-	 25% {
-		 margin-top: -270px;
-	}
-	 30% {
-		 margin-top: -180px;
-	}
-	 50% {
-		 margin-top: -180px;
-	}
-	 55% {
-		 margin-top: -90px;
-	}
-	 75% {
-		 margin-top: -90px;
-	}
-	 80% {
-		 margin-top: 0px;
-	}
-	 99.99% {
-		 margin-top: 0px;
-	}
-	 100% {
-		 margin-top: -270px;
-	}
-}
- /* body, html {
-	 width: 100%;
-	 height: 100vh;
-	 margin: 0;
-	 padding: 0;
-	 overflow: hidden;
-}
- body {
-	 font-family: "Roboto Condensed", cursive;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-}
- body::after {
-	 content: "";
-	 display: block;
-	 width: 110%;
-	 height: 125vh;
-	 background: radial-gradient(#222, #000);
-	 position: absolute;
-	 z-index: -1;
-	 transform: rotate(20deg);
-	 border-radius: 50%;
-}
-  */
 
 
-
-
-
-
-
-
+ /* .container11 {
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  padding: 2rem;
+}
+.headline {
+  --line-height: 1.5;
+  --font-size: 2.4rem;
+  position: relative;
+  top: 2rem;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+.slider-container {
+  display: inline-block;
+  height: calc(var(--font-size) * var(--line-height));
+  overflow: hidden;
+  position: relative;
+  top: 24px;
+  left: -50px;
+}
+.slider-container li {
+  font-family: Serif;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 10px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+}
+.flip4 {
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+@keyframes flip4 {
+  0% {
+    margin-top: -360px;
+ }
+  5% {
+    margin-top: -270px;
+ }
+  25% {
+    margin-top: -270px;
+ }
+  30% {
+    margin-top: -180px;
+ }
+  50% {
+    margin-top: -180px;
+ }
+  55% {
+    margin-top: -90px;
+ }
+  75% {
+    margin-top: -90px;
+ }
+  80% {
+    margin-top: 0px;
+ }
+  99.99% {
+    margin-top: 0px;
+ }
+  100% {
+    margin-top: -270px;
+ }
+} */
 
 
   @import url("https://fonts.googleapis.com/css2?family=Truculenta:wght@400;700&display=swap");
