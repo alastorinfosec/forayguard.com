@@ -1891,7 +1891,7 @@ section {
    }
  }
 
- @media (min-width: 1350px) {
+ @media (min-width: 1400px) {
   .wordCarousel div {
     float: right;
     margin-right: 44px;
@@ -1901,7 +1901,7 @@ section {
   margin-top:5px;
  }
 }
-@media screen and (min-width: 1200px) and (max-width: 1349px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
   .wordCarousel div {
     float: left;
  }
