@@ -282,9 +282,9 @@ h1, h2, h3, h4, h5, h6 {
   #three{
     width:92vw;
   }
-  #four{
+  /* #four{
     width:92vw;
-  }
+  } */
   .navbar ul {
     display: none;
   }
@@ -1007,7 +1007,7 @@ section {
     width: 80%;
   }
   #ff{
-    font-size: 48px;
+    font-size: 42px;
   }
 }
 @media (min-width: 1200px) {
@@ -1891,17 +1891,54 @@ section {
    }
  }
 
- @media (min-width: 1450px) {
+ @media (min-width: 1350px) {
   .wordCarousel div {
     float: right;
  }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 1200px) and (max-width: 1349px) {
   .wordCarousel div {
     float: left;
  }
  .flip4 li{
   margin-left:-40px;
+  margin-top:5px;
+ }
+}
+ @media screen and (min-width: 768px) and (max-width: 1199px){
+  .wordCarousel div {
+    float: left;
+ }
+ .flip4 li{
+  margin-left:-40px;
+  margin-top:7px;
+ }
+}
+@media screen and (min-width: 711px) and (max-width: 767px){
+  .wordCarousel div {
+    float: right;
+ }
+ .flip4 li{
+  margin-left:-40px;
+  margin-top:4px;
+ }
+}
+ @media screen and (min-width: 533px) and (max-width: 710px){
+  .wordCarousel div {
+    float: right;
+ }
+ .flip4 li{
+  margin-left:-40px;
+  margin-top:4px;
+ }
+}
+@media screen and (min-width: 133px) and (max-width: 532px){
+  .wordCarousel div {
+    float: left;
+ }
+ .flip4 li{
+  margin-left:-40px;
+  margin-top:7px;
  }
 }
 
