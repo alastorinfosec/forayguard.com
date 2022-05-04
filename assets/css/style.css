@@ -1894,10 +1894,11 @@ section {
  @media (min-width: 1350px) {
   .wordCarousel div {
     float: right;
+    margin-right: 44px;
  }
  .flip4 li{
   margin-left:-40px;
-  margin-top:5px;
+  margin-top:50px;
  }
 }
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
@@ -1921,6 +1922,7 @@ section {
 @media screen and (min-width: 711px) and (max-width: 767px){
   .wordCarousel div {
     float: right;
+    margin-right: 44px;
  }
  .flip4 li{
   margin-left:-40px;
