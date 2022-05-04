@@ -1932,6 +1932,7 @@ section {
  @media screen and (min-width: 533px) and (max-width: 710px){
   .wordCarousel div {
     float: right;
+    margin-right: 20px;
  }
  .flip4 li{
   margin-left:-40px;
